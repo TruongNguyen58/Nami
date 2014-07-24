@@ -46,6 +46,10 @@ app.get('/currentscores', function(req, res) {
 	race.queryCurrentScores(req, res);
 });
 
+app.get('/onlinesnumber', function(req, res) {
+	race.getNumberUserOnlines(req, res);
+});
+
 app.get('/ping', function(req, res) {
 	res.send('pong');
 });
